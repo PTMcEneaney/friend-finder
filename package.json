@@ -1,0 +1,25 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "This is a compatibility-based \"FriendFinder\" application -- basically a dating app. This full-stack site takes in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.  This uses Express to handle routing and is deployed through Heroku.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PTMcEneaney/friend-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PTMcEneaney/friend-finder/issues"
+  },
+  "homepage": "https://github.com/PTMcEneaney/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}
