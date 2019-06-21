@@ -13,11 +13,8 @@ app.use(express.json());
 // var mysql = require("mysql");
 
 var PORT = 3000;
-// console.log(htmlR.home());
 
 app.use("/", htmlR);
-// app.use("/survey", htmlR);
-
 app.use("/api", apiR);
 
 

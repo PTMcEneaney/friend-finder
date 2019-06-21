@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -26,53 +30,156 @@
     </div>
 
     <div class="container">
-            <h1>Survey</h1>
+        <h1>Survey</h1>
 
         <form>
             <div class="form-group">
-                <label for="formGroupExampleInput">s1</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                <label for="userName">Name</label>
+                <input type="text" class="form-control" id="userName" placeholder="Page">
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput2">s2</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                <label for="userPhoto">Photo URL</label>
+                <input type="text" class="form-control" id="userPhoto" placeholder="www.pagePic.com">
             </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">s3</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            <div>
+                <h2>Personality Questions!</h2><br>
+                <h3>On a scale of 1-5, how important is each topic?</h3>
             </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">s4</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+
+            <!-- row 1 -->
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="question1">s1</label>
+                    <select id="question1" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>1 (Not Important)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Deal Breaker)</option>
+                    </select>
+                </div>
+                <div class="form-group col-6">
+                    <label for="question2">s2</label>
+                    <select id="question2" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>1 (Not Important)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Deal Breaker)</option>
+                        </select>
+                    </div>
             </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">s5</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">s6</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">s7</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">s8</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">s9</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">s10</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-            </div>
+
+            <!-- row 2 -->
+            <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="question3">s1</label>
+                        <select id="question3" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>1 (Not Important)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Deal Breaker)</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="question4">s2</label>
+                        <select id="question4" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>1 (Not Important)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Deal Breaker)</option>
+                            </select>
+                        </div>
+                </div>
+
+                <!-- row 3 -->
+                <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="question5">s1</label>
+                            <select id="question5" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>1 (Not Important)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Deal Breaker)</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="question6">s2</label>
+                            <select id="question6" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>1 (Not Important)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (Deal Breaker)</option>
+                                </select>
+                            </div>
+                    </div>
+
+                    <!-- row 4 -->
+                    <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="question7">s1</label>
+                                <select id="question7" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>1 (Not Important)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (Deal Breaker)</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="question8">s2</label>
+                                <select id="question8" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>1 (Not Important)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Deal Breaker)</option>
+                                    </select>
+                                </div>
+                        </div>
+
+                        <!-- row 5 -->
+                        <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="question9">s1</label>
+                                    <select id="question9" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>1 (Not Important)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Deal Breaker)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="question10">s2</label>
+                                    <select id="question10" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>1 (Not Important)</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5 (Deal Breaker)</option>
+                                        </select>
+                                    </div>
+                            </div>
+            <button type="button" class="btn btn-primary" id="formSubmit">Submit</button>
         </form>
     </div>
 
-    <!-- bootstrap -->
+    <!-- bootstrap
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -82,6 +189,44 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+ -->
+
+    <script>
+        $('#formSubmit').on('click', function (event) {
+            event.preventDefault();
+            // Gather user inputs
+            var userInput = {
+                name: $('#userName').val().trim(),
+                photo: $('#userPhoto').val().trim(),
+                scores: [
+                    $('#question1').val().trim(),
+                    $('#question2').val().trim(),
+                    $('#question3').val().trim(),
+                    $('#question4').val().trim(),
+                    $('#question5').val().trim(),
+                    $('#question6').val().trim(),
+                    $('#question7').val().trim(),
+                    $('#question8').val().trim(),
+                    $('#question9').val().trim(),
+                    $('#question10').val().trim()
+                ]
+            };
+
+            console.log("added user: " + userInput.name);
+
+
+            // Add user inputs to friends list
+            $.post("/api/friends", userInput)
+                .then(function (data) {
+                    console.log("post test")
+                    // Set the name and image values of friend match
+                    // $('#userMatch').html(data.matchName);
+                    // $("#userMatchImage").attr("src", data.matchImage);
+                    // // Pop open the modal dialog
+                    // $('#modal1').modal('open');
+                });
+        });
+    </script>
 </body>
 
 </html>
