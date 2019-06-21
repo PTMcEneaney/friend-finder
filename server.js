@@ -16,9 +16,9 @@ var PORT = 3000;
 // console.log(htmlR.home());
 
 app.use("/", htmlR);
-app.use("/survey", htmlR);
+// app.use("/survey", htmlR);
 
-// app.use("/", htmlR.home());
+app.use("/api", apiR);
 
 
 // //home page
