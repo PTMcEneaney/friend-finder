@@ -1,4 +1,5 @@
 var express = require("express");
+
 var htmlR = require("./app/routing/htmlRoutes");
 var apiR = require("./app/routing/apiRoutes");
 
@@ -10,16 +11,26 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // var mysql = require("mysql");
-// var html = require("./app/routing/htmlRoutes.js")
 
 var PORT = 3000;
 // console.log(htmlR.home());
 
-app.use("/", htmlR.home);
-app.use("/survey", htmlR.survey);
+app.use("/", htmlR);
+app.use("/survey", htmlR);
 
 // app.use("/", htmlR.home());
 
+
+// //home page
+// app.get("/", function(req, res){
+//   res.sendFile(path.join(__dirname, "app/public/home.html"));
+//   console.log("home")
+// });
+// //survey page
+// app.get("/survey", function(req, res){
+//   res.sendFile(path.join(__dirname, "app/public/survey.html"));
+//   console.log("survey")
+// });
 
 //api
 // app.get("/api/friends", function(req, res) {

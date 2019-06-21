@@ -1,20 +1,23 @@
-
+var express = require('express');
 var path = require("path");
 
-//home page
-function home(req, res){
-    res.sendFile(path.join(__dirname, "../public/home.html"));
-    console.log("home")
-};
-//survey page
-function survey(req, res) {
+var router = express.Router();
+var app = express();
+
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+  
+  // Define the home page route
+router.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/home.html"));;
+  });
+  
+  // Define the about route
+router.get('/survey', function(req, res) {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
-    console.log("survey")
-
-};
-
-
-module.exports = {
-    home: home,
-    survey: survey
-}
+  });
+  
+  
+module.exports = router;
