@@ -1,163 +1,68 @@
 var friends = [
     {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Page McEneaney",
+    "photo":"../../assets/images/PageMcEneaney.jpg",
     "scores":[
-        5,
         1,
-        4,
-        4,
-        5,
         1,
         2,
         5,
+        3,
         4,
+        1,
+        1,
+        5,
         1
       ]
   },
   {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Greg McEneaney (Page's Husband)",
+    "photo":"../../assets/images/GregMcEneaney.jpg",
     "scores":[
         5,
-        1,
-        4,
-        4,
-        5,
-        1,
+        3,
         2,
         5,
+        2,
         4,
+        2,
+        1,
+        3,
         1
       ]
   },
   {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Loann Pham",
+    "photo":"../../assets/images/LoannPham.png",
     "scores":[
-        5,
         1,
-        4,
-        4,
-        5,
         1,
-        2,
+        1,
         5,
-        4,
-        1
+        3,
+        3,
+        1,
+        1,
+        1,
+        4
       ]
   },
   {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Andrew Rice",
+    "photo":"../../assets/images/AndrewRice.jpeg",
     "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
+        3,
         2,
+        1,
         5,
-        4,
-        1
+        1,
+        1,
+        1,
+        1,
+        1,
+        3
       ]
   },
-  {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-      ]
-  },
-  {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-      ]
-  },
-  {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-      ]
-  },
-  {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-      ]
-  },
-  {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-      ]
-  },
-  {
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-      ]
-  }];
+  ];
 
   module.exports = friends;

@@ -49,8 +49,6 @@ router.post('/friends', function(req, res) {
 			}
 		}
 
-        // , matchScores: matchScores
-        console.log(matchScores)
 		// Send appropriate response
 		res.json({status: 'OK', matchName: matchName, matchImage: matchImage, matchScores: matchScores});
 

@@ -8,6 +8,8 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+var public = require('path').join(__dirname,'../public');
+app.use(express.static(public));
   
   // Define the home page route
 router.get('/', function(req, res) {

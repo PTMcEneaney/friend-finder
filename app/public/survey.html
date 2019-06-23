@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+    <img src="http://localhost:3000/survey/assets/images/PageMcEneaney.jpg" alt="test">
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-4">Friend Finder</h1>
@@ -45,13 +45,14 @@
             </div>
             <div>
                 <h2>Personality Questions!</h2><br>
-                <h3>On a scale of 1-5, how important is each topic? <br>1 is not important at all<br>5 is a deal breaker</h3>
+                <h3>1: Strongly Agree &lt;-------&gt; 5: Strongly Disagree
+                </h3>
             </div>
 
             <!-- row 1 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question1">s1</label>
+                    <label for="question1">I like scary movies</label>
                     <select id="question1" class="form-control">
                         <option>1</option>
                         <option>2</option>
@@ -61,7 +62,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question2">s2</label>
+                    <label for="question2">I like camping/being in Nature</label>
                     <select id="question2" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -75,7 +76,7 @@
             <!-- row 2 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question3">s1</label>
+                    <label for="question3">I like Vanilla as a flavor</label>
                     <select id="question3" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -85,7 +86,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question4">s2</label>
+                    <label for="question4">I would attend a Country Music Festival</label>
                     <select id="question4" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -99,7 +100,7 @@
             <!-- row 3 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question5">s1</label>
+                    <label for="question5">I like to dance</label>
                     <select id="question5" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -109,7 +110,8 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question6">s2</label>
+                    <label for="question6">I live an active lifestyle
+                        </label>
                     <select id="question6" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -123,7 +125,7 @@
             <!-- row 4 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question7">s1</label>
+                    <label for="question7">I like trying new foods</label>
                     <select id="question7" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -133,7 +135,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question8">s2</label>
+                    <label for="question8">I like to read</label>
                     <select id="question8" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -147,7 +149,7 @@
             <!-- row 5 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question9">s1</label>
+                    <label for="question9">I like Musicals</label>
                     <select id="question9" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -157,7 +159,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question10">s2</label>
+                    <label for="question10">I like singing Karaoke</label>
                     <select id="question10" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -220,7 +222,6 @@
                     // Set the name and image values of friend match
                     // $('#userMatch').html(data.matchName);
                     // $("#userMatchImage").attr("src", data.matchImage);
-
                     $("#friendMatch").append('<div class="card mx-auto" style="max-width: 540px;"><div class="row no-gutters"><div class="col-4"><img src="' + data.matchImage + '" class="card-img" alt="profile picture" width="200px"></div><div class="col-8"><div class="card-body"><h3>' + data.matchName + '</h3><div class="row"><div class="col-6"><ol><li>' + data.matchScores[0] + '</li><li>' + data.matchScores[1] + '</li><li>' + data.matchScores[2] + '</li><li>' + data.matchScores[3] + '</li><li>' + data.matchScores[4] + '</li></ol></div><div class="col-6"><ol><li>' + data.matchScores[5] + '</li><li>' + data.matchScores[6] + '</li><li>' + data.matchScores[7] + '</li><li>' + data.matchScores[8] + '</li><li>' + data.matchScores[9] + '</li></ol></div></div></div></div></div></div></div>');
 
                     console.log(data.matchScores)
