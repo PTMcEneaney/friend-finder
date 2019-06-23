@@ -11,7 +11,7 @@ var apiR = require("./app/routing/apiRoutes");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 app.use("/", htmlR); 
 app.use("/api", apiR);
