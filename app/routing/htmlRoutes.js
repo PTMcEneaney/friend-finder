@@ -8,21 +8,20 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// app.use(express.static(path.join(__dirname,'../public')));
-
-
-
 // Define the home page route
 router.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, "../public/home.html"));
 });
 
-// Define the about route
+// Define the survey route
 router.get('/survey', function (req, res) {
   res.sendFile(path.join(__dirname, "../public/survey.html"));
 
 });
 
+//host images on server to display them while deployed -- I know this is not the 
+//best way to do this, but for some reason I had a lot of trouble accessing them 
+//from the local directory. This was a work-around
 router.get('/images/page', function (req, res) {
   res.sendFile(path.join(__dirname, "../public/assets/images/page.jpg"));
 });
@@ -47,11 +46,5 @@ router.get('/images/samantha', function (req, res) {
 router.get('/images/viktoryia', function (req, res) {
   res.sendFile(path.join(__dirname, "../public/assets/images/viktoryia.jpeg"));
 });
-// router.get('/images/PageMcEneaney.jpg', function(req, res) {
-//     res.send(path.join(__dirname, "../public/assets/images"));
-
-//   });  
-
-
-
+ 
 module.exports = router;

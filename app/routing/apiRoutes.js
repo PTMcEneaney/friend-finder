@@ -1,6 +1,6 @@
 var express = require('express');
-var path = require("path");
 
+//require the js file with friends JSON data
 var list = require("./../data/friends.js")
 
 var router = express.Router();
@@ -10,16 +10,15 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-  
+//get request for /api/friends
 router.get('/friends', function(req, res) {
     res.json(list);
 });
 
+//post request for /api/friends
 router.post('/friends', function(req, res) {
         var userInput = req.body;
 		var userResponses = userInput.scores;
-
-        // res.json(userInput);
 
         // Compute best friend match
 		var matchName = '';
@@ -30,32 +29,26 @@ router.post('/friends', function(req, res) {
 		// Examine all existing friends in the list
 		for (var i = 0; i < list.length; i++) {
 			
-
-			// Compute differences for each question
+			// calculate differences for each question
 			var diff = 0;
 			for (var j = 0; j < userResponses.length; j++) {
 				diff += Math.abs(list[i].scores[j] - userResponses[j]);
-			}
+			};
 			
-
 			// If lowest difference, record the friend match
 			if (diff < totalDifference) {
-				
-
 				totalDifference = diff;
 				matchName = list[i].name;
                 matchImage = list[i].photo;
                 matchScores = list[i].scores;
-			}
-		}
+			};
+		};
 
-		// Send appropriate response
+		// Send response
 		res.json({status: 'OK', matchName: matchName, matchImage: matchImage, matchScores: matchScores});
 
         // Add new user
         list.push(userInput);
-
-        
 });  
 
   
