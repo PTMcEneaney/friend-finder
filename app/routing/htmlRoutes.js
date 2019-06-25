@@ -33,7 +33,7 @@ router.get('/images/andrew', function (req, res) {
   res.sendFile(path.join(__dirname, "../public/assets/images/andrew.jpeg"));
 });
 router.get('/images/stock', function (req, res) {
-  res.sendFile(path.join(__dirname, "../public/assets/images/stock.jpeg"));
+  res.sendFile(path.join(__dirname, "../public/assets/images/stock.png"));
 });
 router.get('/images/jing', function (req, res) {
   res.sendFile(path.join(__dirname, "../public/assets/images/jing.jpg"));

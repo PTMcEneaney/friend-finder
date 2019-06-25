@@ -21,11 +21,12 @@
 <body>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">Friend Finder</h1>
-            <p class="lead">Take the quiz to find your new best friend!</p>
+            <h1 class="display-4">Bootcamp Friend Finder</h1>
+            <p class="lead">Fill out the fields below to find out who in the class you're most similar to!</p>
             <hr class="my-4">
             <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
-            <a class="btn btn-primary btn-lg" href="/api/friends" role="button">All Friends</a>
+            <a class="btn btn-primary btn-lg" href="/survey" role="button">Refresh Survey</a>
+            <a class="btn btn-primary btn-lg" href="/api/friends" role="button" target="_blank">All Friends</a>
 
         </div>
     </div>
@@ -36,22 +37,21 @@
         <form>
             <div class="form-group">
                 <label for="userName">Name</label>
-                <input type="text" class="form-control" id="userName" placeholder="Page">
+                <input type="text" class="form-control" id="userName" placeholder="New Friend!">
             </div>
             <div class="form-group">
                 <label for="userPhoto">Photo URL</label>
-                <input type="text" class="form-control" id="userPhoto" placeholder="www.pagePic.com">
+                <input type="text" class="form-control" id="userPhoto" placeholder="https://fakeimagelocation.jpg">
             </div>
-            <div>
-                <h2>Personality Questions!</h2><br>
-                <h3>1: Strongly Agree &lt;-------&gt; 5: Strongly Disagree
-                </h3>
+            <div class="text-center">
+                <br><h3>1 (Strongly Agree) ... 3 (Neutral) ... 5 (Strongly Disagree)
+                </h3><br>
             </div>
 
             <!-- row 1 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question1">I like scary movies</label>
+                    <label for="question1">1) I like scary movies</label>
                     <select id="question1" class="form-control">
                         <option>1</option>
                         <option>2</option>
@@ -61,7 +61,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question2">I like camping/being in Nature</label>
+                    <label for="question2">2) I like camping/being in Nature</label>
                     <select id="question2" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -75,7 +75,7 @@
             <!-- row 2 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question3">I like Vanilla as a flavor</label>
+                    <label for="question3">3) I like Vanilla as a flavor</label>
                     <select id="question3" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -85,7 +85,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question4">I would attend a Country Music Festival</label>
+                    <label for="question4">4) I would attend a Country Music Festival</label>
                     <select id="question4" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -99,7 +99,7 @@
             <!-- row 3 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question5">I like to dance</label>
+                    <label for="question5">5) I like to dance</label>
                     <select id="question5" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -109,7 +109,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question6">I live an active lifestyle
+                    <label for="question6">6) I live an active lifestyle
                         </label>
                     <select id="question6" class="form-control">
                             <option>1</option>
@@ -124,7 +124,7 @@
             <!-- row 4 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question7">I like trying new foods</label>
+                    <label for="question7">7) I like trying new foods</label>
                     <select id="question7" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -134,7 +134,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question8">I like to read</label>
+                    <label for="question8">8) I like to read</label>
                     <select id="question8" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -148,7 +148,7 @@
             <!-- row 5 -->
             <div class="form-row">
                 <div class="form-group col-6 px-5">
-                    <label for="question9">I like Musicals</label>
+                    <label for="question9">9) I like Musicals</label>
                     <select id="question9" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -158,7 +158,7 @@
                     </select>
                 </div>
                 <div class="form-group col-6 px-5">
-                    <label for="question10">I like singing Karaoke</label>
+                    <label for="question10">10) I like singing Karaoke</label>
                     <select id="question10" class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -167,8 +167,8 @@
                             <option>5</option>
                     </select>
                 </div>
-            </div>
-            <button type="button" class="btn btn-primary" id="formSubmit" href="">Submit</button>
+            </div><br>
+            <button type="button" class="btn btn-primary btn-block" id="formSubmit" href="">Submit</button>
         </form>
     </div>
 
@@ -181,6 +181,16 @@
         </div>
         <div class='d-none mb-5' id="friendMatch">
             <h1 style='text-align:center'>Your new Friend!</h1>
+        </div>
+    </div>
+
+    <div class=" card container p-0 footer border border-warning mb-2">
+        <div class="row text-center mx-0">
+            <div class="col-12">
+                <p class="float-left m-3"><a class="text-primary" href="https://ptmceneaney.github.io/updated-portfolio/"
+                        target="_blank">Learn about the creator of this app!</a></p>
+                <p class='float-right m-3'>© 2019 Copyright</p>
+            </div>
         </div>
     </div>
 

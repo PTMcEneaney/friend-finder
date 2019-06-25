@@ -239,6 +239,38 @@ var friends = [
         2
       ]
   },
+  {
+    "name":"Lady Gaga",
+    "photo":"images/stock",
+    "scores":[
+        1,
+        4,
+        2,
+        1,
+        1,
+        2,
+        2,
+        3,
+        1,
+        1
+      ]
+  },
+  {
+    "name":"Clint",
+    "photo":"images/stock",
+    "scores":[
+        4,
+        5,
+        2,
+        5,
+        3,
+        2,
+        1,
+        1,
+        5,
+        5 
+      ]
+  },
   ];
 
   module.exports = friends;
