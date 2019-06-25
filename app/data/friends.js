@@ -1,7 +1,7 @@
 var friends = [
     {
-    "name":"Page McEneaney",
-    "photo":"../../assets/images/PageMcEneaney.jpg",
+    "name":"Page",
+    "photo":"/images/page",
     "scores":[
         1,
         1,
@@ -16,8 +16,8 @@ var friends = [
       ]
   },
   {
-    "name":"Greg McEneaney (Page's Husband)",
-    "photo":"../../assets/images/GregMcEneaney.jpg",
+    "name":"Greg (Page's Husband)",
+    "photo":"../images/greg",
     "scores":[
         5,
         3,
@@ -32,8 +32,8 @@ var friends = [
       ]
   },
   {
-    "name":"Loann Pham",
-    "photo":"../../assets/images/LoannPham.png",
+    "name":"Loann",
+    "photo":"/images/stock",
     "scores":[
         1,
         1,
@@ -48,8 +48,8 @@ var friends = [
       ]
   },
   {
-    "name":"Andrew Rice",
-    "photo":"../../assets/images/AndrewRice.jpeg",
+    "name":"Andrew (Page's friend from another bootcamp class)",
+    "photo":"images/andrew",
     "scores":[
         3,
         2,
@@ -61,6 +61,182 @@ var friends = [
         1,
         1,
         3
+      ]
+  },
+  {
+    "name":"Zia",
+    "photo":"images/stock",
+    "scores":[
+        4,
+        1,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        3,
+        3
+      ]
+  },
+  {
+    "name":"Jing",
+    "photo":"images/stock",
+    "scores":[
+        3,
+        2,
+        1,
+        4,
+        3,
+        2,
+        1,
+        3,
+        3,
+        3
+      ]
+  },
+  {
+    "name":"Jing",
+    "photo":"images/jing",
+    "scores":[
+        3,
+        2,
+        1,
+        4,
+        3,
+        2,
+        1,
+        3,
+        3,
+        3
+      ]
+  },
+  {
+    "name":"Minetwab",
+    "photo":"images/stock",
+    "scores":[
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+  },
+  {
+    "name":"Katherine",
+    "photo":"images/stock",
+    "scores":[
+        1,
+        1,
+        3,
+        4,
+        2,
+        1,
+        1,
+        1,
+        4,
+        1
+      ]
+  },
+  {
+    "name":"Alex",
+    "photo":"images/alex",
+    "scores":[
+        2,
+        3,
+        4,
+        5,
+        1,
+        3,
+        4,
+        4,
+        5,
+        1
+      ]
+  },
+  {
+    "name":"Samantha",
+    "photo":"images/samantha",
+    "scores":[
+        3,
+        2,
+        4,
+        2,
+        3,
+        4,
+        1,
+        1,
+        3,
+        3
+      ]
+  },
+  {
+    "name":"Robert",
+    "photo":"images/stock",
+    "scores":[
+        3,
+        1,
+        2,
+        5,
+        4,
+        3,
+        2,
+        2,
+        3,
+        3
+      ]
+  },
+  {
+    "name":"Viktoryia",
+    "photo":"images/viktoryia",
+    "scores":[
+        1,
+        1,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        3
+      ]
+  },
+  {
+    "name":"Viktoryia",
+    "photo":"images/viktoryia",
+    "scores":[
+        1,
+        1,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        3
+      ]
+  },
+  {
+    "name":"Amanuel",
+    "photo":"images/stock",
+    "scores":[
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        5,
+        2
       ]
   },
   ];
