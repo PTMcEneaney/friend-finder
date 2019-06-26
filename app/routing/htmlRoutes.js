@@ -46,5 +46,8 @@ router.get('/images/samantha', function (req, res) {
 router.get('/images/viktoryia', function (req, res) {
   res.sendFile(path.join(__dirname, "../public/assets/images/viktoryia.jpeg"));
 });
- 
+router.get('/images/dane', function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/assets/images/dane.jpg"));
+});
+
 module.exports = router;

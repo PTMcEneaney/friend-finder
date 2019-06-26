@@ -271,6 +271,22 @@ var friends = [
         5 
       ]
   },
+  {
+    "name":"Dane",
+    "photo":"images/dane",
+    "scores":[
+        1,
+        1,
+        1,
+        4,
+        3,
+        3,
+        3,
+        1,
+        4,
+        4 
+      ]
+  },
   ];
 
   module.exports = friends;
